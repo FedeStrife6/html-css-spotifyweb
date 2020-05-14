@@ -28,10 +28,10 @@ body {
   float: left;
 }
 
-.side_bar .logo {
-  height: 150px;
-  width: 150px;
-  padding: 20px;
+.side_bar >.logo img {
+  height: 80px;
+  width: 170px;
+  padding-left: 20px;
 }
 
 .content > .main_content {
@@ -39,21 +39,32 @@ body {
   background-color: #2f2321;
   height: 100%;
   width: calc( 100% - 220px );
+  vertical-align: middle;
+  line-height: 80px;
+
 }
+
+/* Btn header_bar */
 .content > .main_content p {
   color: white;
   margin: 0 auto;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .content > .main_content .btn {
-border: 1px solid white;
-border-radius: 5px;
+  border: 1px solid white;
+  border-radius: 26px;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
+.btn:hover {
+  transition: 2s;
+}
+/* End Btn header_bar */
 .header_bar {
-  background-color: #131111;
+  background-color: #0f0b13;
   height: 80px;
   width: 100%;
   opacity: 0,5;
