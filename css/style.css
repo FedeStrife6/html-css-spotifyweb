@@ -17,10 +17,6 @@ h5 {
 
 
 /* End General Rules */
-.side_bar {
-  overflow: hidden;
-}
-
 .content {
   background-color: blue;
   height: calc( 100vh - 100px );
@@ -32,6 +28,7 @@ h5 {
   background-color: #040504;
   height: 100%;
   width: 220px;
+  overflow: hidden;
 }
 
 .side_bar >.navbar >.navbar_img {
@@ -39,6 +36,7 @@ h5 {
   width: 40px;
   padding-left: 15px;
   margin: 10px;
+  text-align: center;
 }
 
 .side_bar >.navbar >.navbar_img img{
@@ -85,29 +83,65 @@ h5 {
   height: 100%;
   width: calc( 100% - 220px );
 }
-
-.menu ul{
-    display: flex;
-
+/* Menu */
+.content-navigation {
+  display: flex;
 
 }
 /* ALBUM LIST */
+.content_box h2 {
+  color: white;
+  padding: 20px 0 30px 15px;
+}
+.content_box .main_menu ul.content-navigation {
+  color: white;
+  padding-top: 15px;
+  text-transform: uppercase;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+}
+.content_box .main_menu .content-navigation a{
+  margin-right: 30px;
+}
 .main_content .album-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.main-content > .album-list li {
-  height: 150px;
-  width: 150px;
+.main_menu >.album-list li {
+  height: 50px;
+  width: 50px;
+}
+.main_content .main_menu .album-list p {
+  font-size: 10px;
+}
+
+
+
+
+.ms_content-navigation>li {
+  margin-right: 10px;
+  position: relative;
 }
 .album-list li p {
-padding: 5px 5px 0 5px;
-font-size: 15px;
-color: #fff;
+  padding: 5px 5px 0 5px;
+  font-size: 15px;
+  color: #fff;
 }
 /* ALBUM LIST */
+.header_bar {
+  background-color: #0f0b13;
+  height: 80px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
 /* Btn header_bar */
 .content > .main_content p {
   color: white;
@@ -128,17 +162,15 @@ color: #fff;
 
 .btn:hover {
   transition: 2s;
+  transform: scale(1.08);
+
 }
 
-/* End Btn header_bar */
-.header_bar {
-  background-color: #0f0b13;
-  height: 80px;
-  width: 100%;
-  opacity: 0,5;
-}
+/* header_bar */
+
 .main_content >.main_menu ul {
   color: white;
+  margin-right: 30px;
 }
 
 .play_bar {
