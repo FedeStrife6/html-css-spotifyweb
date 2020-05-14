@@ -1,23 +1,71 @@
-.container-flex {
-  display: flex;
-  background-color: yellow;
-  max-width: 100%;
-}
-.lateral-navbar {
-  height: 100vh;
-  width: 200px;
-  background-color: black;
-}
-.lateral-navbar > 
-.logo img {
-  padding-bottom: 30px;
-  width: 100px;
-  height: 100px;
+ /** General Rules **/
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.main-navbar {
+body {
+  font-size: 16px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* End General Rules */
+
+.content {
+  background-color: blue;
+  height: calc( 100vh - 100px );
+  width: 100%;
+}
+
+.content > .side_bar {
+  float: left;
+  background-color: #040504;
+  height: 100%;
+  width: 220px;
+  float: left;
+}
+
+.side_bar .logo {
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+}
+
+.content > .main_content {
+  float: left;
+  background-color: #2f2321;
+  height: 100%;
+  width: calc( 100% - 220px );
+}
+.content > .main_content p {
+  color: white;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.content > .main_content .btn {
+border: 1px solid white;
+border-radius: 5px;
+}
+
+.header_bar {
+  background-color: #131111;
   height: 80px;
   width: 100%;
-  background-color: blue;
-
+  opacity: 0,5;
 }
+
+.play_bar {
+  background-color: #352f2f;
+  height: 100px;
+  width: 100%;
+}
+
+/* barra laterale */
+
+/* fine barra laterale */
+/* contenuto album */
